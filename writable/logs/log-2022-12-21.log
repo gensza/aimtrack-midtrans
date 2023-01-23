@@ -1,0 +1,96 @@
+ERROR - 2022-12-21 21:18:08 --> mysqli_sql_exception: Table 'db_aimtrack.tb_profile_company' doesn't exist in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, `pro...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, `pro...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `pro...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\DataSetupModel.php(161): CodeIgniter\Database\BaseConnection->query('SELECT id, `pro...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\DataSetup.php(192): App\Models\DataSetupModel->get_data_setup_profile()
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\DataSetup->get_data_setup_profile()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-21 21:18:08 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\DataSetupModel.php on line 161.
+ 1 APPPATH\Controllers\DataSetup.php(192): App\Models\DataSetupModel->get_data_setup_profile()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->get_data_setup_profile()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-21 21:24:31 --> mysqli_sql_exception: Unknown column 'profile' in 'field list' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, `pro...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, `pro...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `pro...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\DataSetupModel.php(161): CodeIgniter\Database\BaseConnection->query('SELECT id, `pro...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\DataSetup.php(192): App\Models\DataSetupModel->get_data_setup_profile()
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\DataSetup->get_data_setup_profile()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-21 21:24:31 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\DataSetupModel.php on line 161.
+ 1 APPPATH\Controllers\DataSetup.php(192): App\Models\DataSetupModel->get_data_setup_profile()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->get_data_setup_profile()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:39:35 --> move_uploaded_file(assets/document/logoProfile/dribbble.png-21-12-2022/2mZvD): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(assets/document/logoProfile/dribbble.png-21-12-2022/2mZvD): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\php9669.tmp', 'assets/document/logoProfile/dribbble.png-21-12-2022/2mZvD')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:43:21 --> move_uploaded_file(assets/document/logoProfile/dribbble.png-21-12-2022/wBuqG): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(assets/document/logoProfile/dribbble.png-21-12-2022/wBuqG): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\php8CC.tmp', 'assets/document/logoProfile/dribbble.png-21-12-2022/wBuqG')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:49:53 --> move_uploaded_file(21-12-2022/IW3MG-assets/document/logoProfile/github.png): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(21-12-2022/IW3MG-assets/document/logoProfile/github.png): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\php22A.tmp', '21-12-2022/IW3MG-assets/document/logoProfile/github.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:50:52 --> move_uploaded_file(assets/document/logoProfile/21-12-2022/CFfI4-github.png): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(assets/document/logoProfile/21-12-2022/CFfI4-github.png): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\phpE9EB.tmp', 'assets/document/logoProfile/21-12-2022/CFfI4-github.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:52:01 --> move_uploaded_file(assets/document/logoProfile/21-12-2022/qMUMa-github.png): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(assets/document/logoProfile/21-12-2022/qMUMa-github.png): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\phpF8EB.tmp', 'assets/document/logoProfile/21-12-2022/qMUMa-github.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 21:56:25 --> move_uploaded_file(assets/document/logoProfile/21-12-2022/zEEYo-dropbox.png): failed to open stream: No such file or directory
+in APPPATH\Controllers\DataSetup.php on line 219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(assets/document/logoProfile/21-12-2022/zEEYo-dropbox.png): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\DataSetup.php', 219, [...])
+ 2 APPPATH\Controllers\DataSetup.php(219): move_uploaded_file('C:\\xampp\\tmp\\php6A.tmp', 'assets/document/logoProfile/21-12-2022/zEEYo-dropbox.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DataSetup->add_data_setup_profile()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSetup))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,21 @@
+CRITICAL - 2022-12-01 22:29:14 --> Call to a member function delete_activity_event() on null
+in APPPATH\Controllers\Tracking.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->delete_activity_event()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-01 22:30:36 --> Call to a member function delete_activity_event() on null
+in APPPATH\Controllers\Tracking.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->delete_activity_event()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-01 22:32:02 --> Call to a member function delete_activity_event() on null
+in APPPATH\Controllers\Tracking.php on line 150.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->delete_activity_event()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,97 @@
+ERROR - 2022-11-28 20:30:30 --> mysqli_sql_exception: Unknown column 'a.container_number' in 'field list' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT a.noref,...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.noref,...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.noref,...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT a.noref,...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-28 20:30:30 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\TrackingModel.php on line 30.
+ 1 APPPATH\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 20:32:23 --> mysqli_sql_exception: Unknown column 'a.container_number' in 'field list' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT a.noref,...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.noref,...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.noref,...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT a.noref,...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-28 20:32:24 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\TrackingModel.php on line 30.
+ 1 APPPATH\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 21:01:36 --> mysqli_sql_exception: Unknown column 'container_number' in 'field list' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, inte...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, inte...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, inte...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(26): CodeIgniter\Database\BaseConnection->query('SELECT id, inte...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(40): App\Models\HomeModel->get_data_track_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-28 21:01:36 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\HomeModel.php on line 27.
+ 1 APPPATH\Controllers\Home.php(40): App\Models\HomeModel->get_data_track_shipment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-28 21:25:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)' at line 5 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO tb_...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO tb_...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tb_...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(104): CodeIgniter\Database\BaseConnection->query('INSERT INTO tb_...', Array)
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(96): App\Models\HomeModel->add_data_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->add_data_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-11-28 22:19:14 --> mysqli_sql_exception: Unknown column 'direct' in 'where clause' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT port_nam...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT port_nam...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT port_nam...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(37): CodeIgniter\Database\BaseConnection->query('SELECT port_nam...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(38): App\Models\TrackingModel->get_data_port_name('direct')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-28 22:19:15 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TrackingModel.php on line 38.
+ 1 APPPATH\Controllers\Tracking.php(38): App\Models\TrackingModel->get_data_port_name('direct')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

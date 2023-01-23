@@ -1,0 +1,102 @@
+ERROR - 2022-12-10 14:35:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'BY id DESC LIMIT 0,5' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, inte...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, inte...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, inte...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT id, inte...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-10 14:35:25 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\HomeModel.php on line 29.
+ 1 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-10 14:36:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'BY id DESC LIMIT 0,5' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, inte...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, inte...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, inte...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(28): CodeIgniter\Database\BaseConnection->query('SELECT id, inte...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-10 14:36:09 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\HomeModel.php on line 29.
+ 1 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-10 14:44:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Delayed ORDER BY id DESC LIMIT 0,5' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, inte...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, inte...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, inte...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(32): CodeIgniter\Database\BaseConnection->query('SELECT id, inte...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-10 14:44:03 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\HomeModel.php on line 33.
+ 1 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-10 14:45:34 --> mysqli_sql_exception: Unknown column 'status ' in 'where clause' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id, inte...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id, inte...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, inte...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\HomeModel.php(32): CodeIgniter\Database\BaseConnection->query('SELECT id, inte...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment(Array)
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-10 14:45:34 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\HomeModel.php on line 33.
+ 1 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-10 15:15:50 --> A non-numeric value encountered
+in APPPATH\Models\HomeModel.php on line 22.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\HomeModel.php', 22, [...])
+ 2 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-10 17:33:57 --> A non-numeric value encountered
+in APPPATH\Models\HomeModel.php on line 22.
+ 1 APPPATH\Models\HomeModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\HomeModel.php', 22, [...])
+ 2 APPPATH\Controllers\Home.php(30): App\Models\HomeModel->get_data_track_shipment([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_data_track_shipment()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

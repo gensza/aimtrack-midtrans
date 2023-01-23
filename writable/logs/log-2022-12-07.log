@@ -1,0 +1,84 @@
+ERROR - 2022-12-07 22:06:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.internal_number, a.bl_number, a.movement_type, a.status, a.ship_number, a.po...' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT a.noref,...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.noref,...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.noref,...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT a.noref,...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(32): App\Models\TrackingModel->get_data_track_shipment('37')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-07 22:06:49 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\TrackingModel.php on line 30.
+ 1 APPPATH\Controllers\Tracking.php(32): App\Models\TrackingModel->get_data_track_shipment('37')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 22:17:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.internal_number, a.bl_number, a.movement_type, a.status, a.ship_number, a.po...' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT a.noref,...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.noref,...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.noref,...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT a.noref,...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(32): App\Models\TrackingModel->get_data_track_shipment('45')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-07 22:17:45 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\TrackingModel.php on line 30.
+ 1 APPPATH\Controllers\Tracking.php(32): App\Models\TrackingModel->get_data_track_shipment('45')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 22:20:10 --> mysqli_sql_exception: Unknown column 'EVERGREEN' in 'where clause' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT port_nam...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT port_nam...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT port_nam...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(37): CodeIgniter\Database\BaseConnection->query('SELECT port_nam...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(40): App\Models\TrackingModel->get_data_port_name('EVERGREEN/04-12...')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-07 22:20:10 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TrackingModel.php on line 38.
+ 1 APPPATH\Controllers\Tracking.php(40): App\Models\TrackingModel->get_data_port_name('EVERGREEN/04-12-2022/vDhvTxIE7k')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 22:26:34 --> mysqli_sql_exception: Unknown column 'EVERGREEN' in 'where clause' in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT port_nam...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT port_nam...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT port_nam...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(37): CodeIgniter\Database\BaseConnection->query('SELECT port_nam...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(40): App\Models\TrackingModel->get_data_port_name('EVERGREEN/04-12...')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-12-07 22:26:34 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\TrackingModel.php on line 38.
+ 1 APPPATH\Controllers\Tracking.php(40): App\Models\TrackingModel->get_data_port_name('EVERGREEN/04-12-2022/vDhvTxIE7k')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_port_name()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,21 @@
+ERROR - 2022-11-27 15:03:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as id_vessel_schedules, a.npe_peb_number, a.ci_pl_number, a.incoterm FROM tb_...' at line 1 in C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT a.noref,...', 0)
+#1 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.noref,...')
+#2 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.noref,...')
+#3 C:\xampp\htdocs\aimtrack-V.1\app\Models\TrackingModel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT a.noref,...')
+#4 C:\xampp\htdocs\aimtrack-V.1\app\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+#5 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+#6 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#7 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\aimtrack-V.1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\aimtrack-V.1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-11-27 15:03:01 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\TrackingModel.php on line 30.
+ 1 APPPATH\Controllers\Tracking.php(30): App\Models\TrackingModel->get_data_track_shipment('33')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Tracking->get_data_track_shipment()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,16 @@
+CRITICAL - 2022-12-02 10:02:44 --> move_uploaded_file(public/assets/document/trackingShipment/FRM-NOC-006-FORMNon-DisclosureAgreementPekerjaOutsoursekeBRI(1).pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 97.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(public/assets/document/trackingShipment/FRM-NOC-006-FORMNon-DisclosureAgreementPekerjaOutsoursekeBRI(1).pdf): failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 97, [...])
+ 2 APPPATH\Controllers\Home.php(97): move_uploaded_file('C:\\xampp\\tmp\\php82A5.tmp', 'public/assets/document/trackingShipment/FRM-NOC-006-FORMNon-DisclosureAgreementPekerjaOutsoursekeBRI(1).pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->add_data_shipment()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-02 21:40:28 --> Call to a member function get_data_vessel() on null
+in APPPATH\Controllers\VesselSchedules.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\VesselSchedules->get_data_vessel()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VesselSchedules))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
